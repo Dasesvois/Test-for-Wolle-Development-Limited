@@ -49,11 +49,11 @@
   display: inline-block;
   position: relative;
   margin-left: 2px;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 12px;
   transform: rotate(-90deg);
   transform-origin: left top;
-  top: 2px;
+  top: 36px;
   left: 2px;
 }
 
