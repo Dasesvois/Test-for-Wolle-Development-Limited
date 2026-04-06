@@ -34,7 +34,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 
-const giftImage = '/images/presSeven.png';
+const giftImage = `${import.meta.env.BASE_URL}images/presSeven.png`;;
 
 const props = defineProps<{
   currentDay: number;

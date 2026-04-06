@@ -104,8 +104,9 @@ import { useQuestsStore } from '../../entities/quest/store/quests.store';
 
 const store = useQuestsStore();
 
-const badgeImage = '/images/icon-DailywheelCard1.png';
-const buttonIcon = '/images/gift-small.png';
+const baseUrl = import.meta.env.BASE_URL;
+const badgeImage = `${baseUrl}images/icon-DailywheelCard1.png`;
+const buttonIcon = `${baseUrl}images/gift-small.png`;
 
 const viewportRef = ref<HTMLElement | null>(null);
 const offsetX = ref(0);

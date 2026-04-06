@@ -72,13 +72,14 @@ function saveProgress(progress: DailyWheelProgress) {
 }
 
 export const useQuestsStore = defineStore('quests', () => {
+  const baseUrl = import.meta.env.BASE_URL;
   const rewards = ref<Reward[]>([
-    { id: 1, title: 'СКИДКА', value: '70%', image: '/images/pres1.png' },
-    { id: 2, title: 'СКИДКА', value: '50%', image: '/images/pres1.png' },
-    { id: 3, title: 'СКИДКА', value: '30%', image: '/images/pres1.png' },
-    { id: 4, title: 'БЕСПЛАТНЫЕ', value: '6 часов', image: '/images/pres2.png' },
-    { id: 5, title: 'СКИДКА', value: '20%', image: '/images/pres1.png' },
-    { id: 6, title: 'ПОПРОБУЙТЕ', value: 'заВтра', image: '/images/pres3.png' },
+    { id: 1, title: 'СКИДКА', value: '70%', image: `${baseUrl}images/pres1.png` },
+    { id: 2, title: 'СКИДКА', value: '50%', image: `${baseUrl}images/pres1.png` },
+    { id: 3, title: 'СКИДКА', value: '30%', image: `${baseUrl}images/pres1.png` },
+    { id: 4, title: 'БЕСПЛАТНЫЕ', value: '6 часов', image: `${baseUrl}images/pres2.png` },
+    { id: 5, title: 'СКИДКА', value: '20%', image: `${baseUrl}images/pres1.png` },
+    { id: 6, title: 'ПОПРОБУЙТЕ', value: 'заВтра', image: `${baseUrl}images/pres1.png` },
   ]);
 
   const tasks = ref<QuestTask[]>([
