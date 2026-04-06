@@ -48,8 +48,8 @@
 .logo__vpn {
   display: inline-block;
   position: relative;
-  margin-left: 2px;
   font-size: 16px;
+  margin-left: 2px;
   line-height: 12px;
   transform: rotate(-90deg);
   transform-origin: left top;
